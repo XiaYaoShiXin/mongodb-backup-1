@@ -1,4 +1,4 @@
-# [mongodb-backup](https://github.com/hex7c0/mongodb-backup)
+# [mongodb-backup-fixed](https://github.com/hex7c0/mongodb-backup)
 
 Since hex7c0 give up maintained the [project](https://github.com/hex7c0/mongodb-backup),I had to fixed the bug myself.Just share why it didn't work.   
 
@@ -8,7 +8,9 @@ MongoDB deperecated the method snapshot(),so we have to modify our function.
 **Wrong code:** var stream = collection.find(query).snapshot(true).stream();  
 **Correct code:** var stream = collection.find({$query:query, $snapshot:true}).stream();  
 
-**Below here is original document**
+**quick start:** npm install mongodb-backup-fixed
+
+## Below here is original document
 
 
 [![NPM version](https://img.shields.io/npm/v/mongodb-backup.svg)](https://www.npmjs.com/package/mongodb-backup)
