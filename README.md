@@ -30,7 +30,7 @@ Look at [`mongodb-restore`](https://github.com/hex7c0/mongodb-restore) for resto
 Install through NPM
 
 ```bash
-npm install mongodb-backup
+npm install mongodb-backup-fixed
 ```
 or
 ```bash
